@@ -3,10 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donia Blair Portfolio | FES</title>
+    <title>Donia Blair | JS Portfolio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Donia Blair</h1>
+    <section id="landing">
+        <nav>
+            <div class="personal-logo">Donia Blair</div>
+            <ul class="nav__list">
+                <li><a href="#" class="nav__list--anchor-link link__hover-effect link__hover-effect--black">About</a></li>
+                <li><a href="#" class="nav__list--anchor-link link__hover-effect link__hover-effect--black">Projects</a></li>
+                <li><a href="#" class="nav__list--anchor-link link__hover-effect link__hover-effect--black">Contact</a></li>
+                <li><a href="#" class="nav__list--anchor-link animation--click"><img src="./assets/icon-theme.svg" alt=""></a></li>
+            </ul>
+        </nav>
+        <header>
+            <div class="header-content">
+                <h1 class="title">Hey <span class="color--primary">I’m Donia.</span></h1>
+                <p>I'm a detail-driven <strong class="color--primary">frontend developer</strong> dedicated to building and maintaining fast, reliable websites that elevate user experience and drive business growth. <br>Here's a bit more <strong class="color--primary">about me</strong>.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/doniablair/" target="_blank" class="animation--click">
+                        <img src="./assets/icon-linkedin.svg" alt="LinkedIn icon">
+                    </a>
+                    <a href="https://github.com/doniaBlair" target="_blank" class="animation--click">
+                        <img src="./assets/icon-github.svg" alt="GitHub icon">
+                    </a>
+                    <a href="./assets/dblair-resume.pdf" target="_blank" class="animation--click">
+                        <img src="./assets/icon-pdf.svg" alt="PDF icon">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <button class="email-button animation--click">
+            <img src="./assets/icon-envelope.svg" alt="mail icon">
+        </button>
+        <a href="#projects" class="scroll animation--click">
+            <span class="scroll-icon"></span>
+        </a>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <h2 class="section__title text--center">Here are some of my <span class="color--primary">projects</span></h2>
+            <ul class="projects-list">
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="./assets/project-e-commerce.jpg" class="project__image" alt="ecommerce home page">
+                        <div class="project__description">
+                            <h3>Ecommerce</h3>
+                            <h4>HTML, CSS, JavaScript</h4>
+                            <p>A responsive ecommerce home page featuring a clean design with product showcases and smooth hover effects. This project demonstrates fundamental frontend development skills and attention to UI/UX detail.</p>
+                            <div class="project__description-links">
+                                <a href="https://github.com/doniaBlair/fes-e-commerce" target="_blank" class="animation--click"><img src="./assets/icon-github.svg" alt="GitHub logo"></a>
+                                <a href="https://doniablair.github.io/fes-e-commerce/" target="_blank" class="animation--click"><img src="./assets/icon-external-link.svg" alt="external link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="project">
+                    <div class="project__wrapper">
+                        <img src="./assets/project-treact.jpg" class="project__image" alt="landing page">
+                        <div class="project__description">
+                            <h3>Landing Page</h3>
+                            <h4>HTML, CSS, JavaScript</h4>
+                            <p>A responsive landing page featuring modern layout techniques, consistent styling, and component-based design with reusaable UI sections. This project highlights proficiency in responsive design and class-based CSS frameworks.</p>
+                            <div class="project__description-links">
+                                <a href="https://github.com/doniaBlair/treact" target="_blank" class="animation--click"><img src="./assets/icon-github.svg" alt="GitHub logo"></a>
+                                <a href="https://doniablair.github.io/treact/" target="_blank" class="animation--click"><img src="./assets/icon-external-link.svg" alt="external link"></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="personal-logo">
+                <a href="#">
+                    <span>Donia Blair</span>
+                    <span class="footer__logo--popper">To Top</span>
+                </a>
+            </div>
+            <div class="footer__social--list">
+                <a href="https://www.linkedin.com/in/doniablair/" class="link__hover-effect link__hover-effect--white" target="_blank">LinkedIn</a>
+                <a href="https://github.com/doniaBlair" class="link__hover-effect link__hover-effect--white" target="_blank">GitHub</a>
+                <a href="mailto:donia.blair@gmail.com" class="link__hover-effect link__hover-effect--white" target="_blank">Email</a>
+                <a href="./assets/dblair-resume.pdf" class="link__hover-effect link__hover-effect--white" target="_blank">Resumé</a>
+            </div>
+            <div class="footer__copyright">Copyright © 2025 Donia Blair</div>
+        </div>
+    </footer>
 </body>
 </html>
