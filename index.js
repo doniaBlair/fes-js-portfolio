@@ -2,6 +2,20 @@
 // service ID: service_lm55ex7
 // user ID/public key: 5cZt_Fo4A1ouF1X4F
 
+const scaleFactor = 1/20;
+function moveBackground(event) {
+    const shapes = document.querySelectorAll('.shape');
+    const mouseX = event.clientX * scaleFactor;
+    const mouseY = event.clientY * scaleFactor;
+    
+    for( let i = 0; i < shapes.length; i++ ) {
+        const isOdd = i % 2 !== 0;
+        const boolInt = isOdd ? -1 : 1;
+        shapes[i].style.transform = `translate(${mouseX * boolInt}px, ${mouseY * boolInt}px)`;
+    }
+}
+
+
 let contrastToggle = false;
 function toggleContrast(event) {
     event.preventDefault();
@@ -13,6 +27,7 @@ function toggleContrast(event) {
         document.body.classList.remove('dark-theme');
     }
 }
+
 
 async function contact(event) {
     event.preventDefault();
@@ -48,4 +63,5 @@ function toggleModal() {
     
     isModalOpen = true;
     document.body.classList += ' modal--open';
+    window.scrollTo(0, 0);
 }

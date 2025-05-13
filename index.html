@@ -17,13 +17,13 @@
     })();
     </script>
 </head>
-<body>
+<body onmousemove="moveBackground(event)">
     <section id="landing">
         <nav>
             <div class="personal-logo">Donia Blair</div>
             <ul class="nav__list">
                 <li><a href="#" class="nav__list--anchor-link link__hover-effect link__hover-effect--black" onclick="toggleModal()">About</a></li>
-                <li><a href="#" class="nav__list--anchor-link link__hover-effect link__hover-effect--black" onclick="toggleModal()">Projects</a></li>
+                <li><a href="#projects" class="nav__list--anchor-link link__hover-effect link__hover-effect--black">Projects</a></li>
                 <li><a href="#" class="nav__list--anchor-link link__hover-effect link__hover-effect--black" onclick="toggleModal()">Contact</a></li>
                 <li><a href="#" class="nav__list--anchor-link animation--click" onclick="toggleContrast(event)"><img src="./assets/icon-theme.svg" alt=""></a></li>
             </ul>
@@ -45,7 +45,7 @@
                 </div>
             </div>
         </header>
-        <button class="email-button animation--click" onclick="toggleModal()">
+        <button id="email-button" class="email-button animation--click" onclick="toggleModal()">
             <img src="./assets/icon-envelope.svg" alt="mail icon">
         </button>
         <a href="#projects" class="scroll animation--click">
@@ -156,11 +156,22 @@
             <div class="footer__social--list">
                 <a href="https://www.linkedin.com/in/doniablair/" class="link__hover-effect link__hover-effect--white" target="_blank">LinkedIn</a>
                 <a href="https://github.com/doniaBlair" class="link__hover-effect link__hover-effect--white" target="_blank">GitHub</a>
-                <a href="mailto:donia.blair@gmail.com" class="link__hover-effect link__hover-effect--white" target="_blank">Email</a>
+                <a href="#" class="link__hover-effect link__hover-effect--white" onclick="toggleModal()">Contact</a>
                 <a href="./assets/dblair-resume.pdf" class="link__hover-effect link__hover-effect--white" target="_blank">Resumé</a>
             </div>
             <div class="footer__copyright">Copyright © 2025 Donia Blair</div>
         </div>
     </footer>
+    <div class="shapes">
+        <img src="./assets/shape-semi-circle.svg" class="shape shape-0" alt="">
+        <img src="./assets/shape-circle.svg" class="shape shape-1" alt="">
+        <img src="./assets/shape-squiggly.svg" class="shape shape-2" alt="">
+        <img src="./assets/shape-circle.svg" class="shape shape-3" alt="">
+        <img src="./assets/shape-triangle.svg" class="shape shape-4" alt="">
+        <img src="./assets/shape-circle.svg" class="shape shape-5" alt="">
+        <img src="./assets/shape-squiggly.svg" class="shape shape-6" alt="">
+        <img src="./assets/shape-circle.svg" class="shape shape-7" alt="">
+        <img src="./assets/shape-semi-circle.svg" class="shape shape-8" alt="">
+    </div>
 </body>
 </html>
